@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas game</title>
+    <link rel="stylesheet" href="stylesheets/app.css"/>
+</head>
+<body>
+<canvas id="game-container" width="500" height="400"></canvas>
+<script src="src/game.js"></script>
+<script src="src/character.js"></script>
+<script src="src/move_behaviors.js"></script>
+<script>
+    var game = new Game(document.getElementById('game-container'));
+    game.start();
+</script>
+</body>
+</html>
